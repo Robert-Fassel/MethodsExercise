@@ -5,8 +5,22 @@ namespace MethodsExercise
 {
     public class Program
     {
+        public static int Sum(int sum1, int sum2)
+        {
+            var answer = sum1 + sum2;
+            return answer;
+        }
+
+        public static int Multiply(int num1, int num2, int num3)
+        {
+            return num1 * num2 * num3;
+        }
         static void Main(string[] args)
         {
+            var amountOfCars = Sum(2, 6);
+            var tires = Multiply(60, 2, 3);
+
+
             Console.WriteLine("Madlibs knockoff\nPlease enter the folowing information for a fun story!");
             Console.WriteLine("First Name:");
             string name = Console.ReadLine();
